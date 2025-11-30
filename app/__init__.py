@@ -17,7 +17,7 @@ logger = logging.getLogger(__name__)
 
 bot = Bot(
 	default=DefaultBotProperties(parse_mode=ParseMode.HTML),
-	token=environ.get('TGCallABot'))
+	token=environ.get('TGCALLABOT'))
 dispatcher = Dispatcher(
 	storage=MemoryStorage(),
 	fsm_strategy=FSMStrategy.USER_IN_CHAT)
