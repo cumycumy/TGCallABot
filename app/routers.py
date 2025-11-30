@@ -13,7 +13,7 @@ router = Router()
 
 client = AsyncClient(
 	headers={
-		'Authorization': ('Bearer ' + environ.get('deepseek-v3', '')),
+		'Authorization': ('Bearer ' + environ.get('deepseek', '')),
 	},
 )
 
