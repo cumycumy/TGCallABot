@@ -84,6 +84,12 @@ async def message(message: Message):
 			except TelegramBadRequest as error:
 				print(error)
 			writed = False
+	else:
+		reply['text'] += '\n'
+		reply['text'] += '=' * 10
+		reply['text'] += ' Выполнено '
+		reply['text'] += '=' * 10
+		await answer.edit_text(text=reply['text'])
 
 	chat.add(model.Message('assistant', reply['text']))
 	del messages[message.from_user.id][answer.message_id]
