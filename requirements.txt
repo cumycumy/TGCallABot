@@ -1,2 +1,3 @@
 ollama
 aiogram
+apscheduler[asyncio]

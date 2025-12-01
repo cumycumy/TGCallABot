@@ -1,4 +1,4 @@
-from aiogram.utils.keyboarb import InlineKeyboardBuilder
+from aiogram.utils.keyboard import InlineKeyboardBuilder
 
 
 keyboard = (InlineKeyboardBuilder()
